@@ -16,3 +16,5 @@ buildNumber.properties
 frontend/node_modules
 
 clothes-shop.iml
+
+frontend/package-lock.json
