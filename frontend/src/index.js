@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {Router, Route, browserHistory} from 'react-router';
 import {syncHistoryWithStore} from 'react-router-redux';
-import  {Switch,} from 'react-router-dom';
-import './css/index.css';
+import {Switch,} from 'react-router-dom';
 import store from './store';
 import Main from './component/Main';
-import './css/bootstrap.css';
+import './css/index.css';
 
 import registerServiceWorker from './registerServiceWorker';
 

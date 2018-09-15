@@ -1,0 +1,34 @@
+.head-component {
+    width: 100%;
+    background-color: #35383b;
+}
+
+.main-header {
+    justify-content: space-between;
+}
+
+.main-header a {
+    font-size: 18px;
+    line-height: 60px;
+    padding-right: 100px;
+    color: #ffffff;
+}
+
+.main-header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.head-content a {
+    color: #98978B;
+    font-size: 16px;
+}
+
+.head-content a:hover {
+    color: #ffffff;
+    text-decoration: unset;
+}
+
+.main-header img {
+    width: 100px;
+}
