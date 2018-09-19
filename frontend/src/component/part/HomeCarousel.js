@@ -1,41 +1,37 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap';
 import './css/homeCarousel.css'
+import {Link} from 'react-router';
+import PropTypes from 'prop-types';
 
 class HomeCarousel extends Component {
-    constructor(props, context) {
-        super(props, context);
+    constructor(props) {
+        super(props);
     }
 
     render() {
         return (
             <div className="home-carousel-component">
                 <Carousel>
-                    <Carousel.Item>
-                        <img width={900} height={500} alt="900x500" src="https://1wallz.ru/wallpapers/large/5194.jpg"/>
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={900} height={500} alt="900x500" src="https://1wallz.ru/wallpapers/large/5194.jpg"/>
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img width={900} height={500} alt="900x500" src="https://1wallz.ru/wallpapers/large/5194.jpg"/>
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
+                    {this.props.pictures.map((picture) =>
+                        <Carousel.Item>
+                            <Link to="/"><img src={picture.src}/></Link>
+                            <Carousel.Caption>
+                                <div hidden={!this.props.isCaptionExist}>
+                                    <h3>{picture.title}</h3>
+                                    <p>{picture.price}</p>
+                                </div>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    )}
                 </Carousel>
             </div>
         )
     }
 }
+
+HomeCarousel.propTypes = {
+    pictures: PropTypes.array.isRequired
+};
 
 export default HomeCarousel;
