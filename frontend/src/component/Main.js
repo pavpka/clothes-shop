@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Head from './part/Head'
 import HomeCarousel from './part/HomeCarousel';
 import './css/main.css';
+import TextCarousel from './part/TextCarousel';
 
 class Main extends Component {
     render() {
@@ -30,6 +31,7 @@ class Main extends Component {
                     <HomeCarousel className="suits" {...carouselProps}/>
                 </div>
                 <div>lol</div>
+                <TextCarousel/>
             </div>
         )
     }
