@@ -32,6 +32,7 @@ class Main extends Component {
                 </div>
                 <div>lol</div>
                 <TextCarousel/>
+                <div>lol</div>
             </div>
         )
     }
