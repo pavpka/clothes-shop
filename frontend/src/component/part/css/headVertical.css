@@ -1,0 +1,31 @@
+.head-vertical-component {
+    display: flex;
+    height: 100%;
+    width: 40%;
+}
+
+.head-vertical-categories {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+.head-vertical-categories li {
+    margin: 1% 15%;
+}
+
+.head-vertical-categories .first-element {
+    font-weight: bold;
+}
+
+.head-vertical-categories a {
+    color: #98978B;
+}
+
+.head-vertical-categories a:hover {
+    color: #3d4043;
+}

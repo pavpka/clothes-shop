@@ -12,7 +12,7 @@ class Main extends Component {
             isCaptionExist: true,
             pictures: [
                 {
-                    src: "http://wallpapercave.net/images/romantic-wallpaper-hd/romantic-wallpaper-hd-2.jpg",
+                    src: "https://staticpages.mngbcn.com/homes/images/fw18/he/septiembre/newnow_he_septiembre_2_3_large.jpg?imwidth=1366&imdensity=1",
                     title: "lol",
                     price: "kek",
                 },
@@ -24,12 +24,9 @@ class Main extends Component {
             ],
         };
         return (
-            <div>
+            <div className="main-component">
                 <Head/>
                 <HomeCarousel {...carouselProps}/>
-                <div className="suits">
-                    <HomeCarousel className="suits" {...carouselProps}/>
-                </div>
                 <div>lol</div>
                 <TextCarousel/>
                 <div>lol</div>

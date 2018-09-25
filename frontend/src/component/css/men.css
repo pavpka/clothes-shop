@@ -1,0 +1,25 @@
+.men-component{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.suit-hyde{
+    height: 100%;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+}
+
+.suit-hyde a{
+    background: url("https://staticpages.mngbcn.com/homes/images/fw18/he/septiembre/landing_he_suitguide_08-18_he.jpg?imwidth=1366&imdensity=1") no-repeat center;
+    height: 100%;
+    width: 100%;
+}
+
+.men-content{
+    display: flex;
+    justify-content: space-around;
+    min-height: 700px;
+}

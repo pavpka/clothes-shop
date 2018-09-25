@@ -7,6 +7,7 @@ import {Switch,} from 'react-router-dom';
 import store from './store';
 import Main from './component/Main';
 import './css/index.css';
+import Men from './component/Men';
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Router history={history}>
             <Switch>
                 <Route exact path="/" component={Main}/>
+                <Route path="/men" component={Men}/>
             </Switch>
         </Router>
     </Provider>,
