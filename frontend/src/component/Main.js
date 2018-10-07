@@ -25,7 +25,11 @@ class Main extends Component {
         };
         return (
             <div className="main-component">
-                <Head/>
+                <div id="page-wrap">
+                    <h1>Cool Restaurant 🍔🍕</h1>
+                    <h2>Check out our offerings in the sidebar!</h2>
+                </div>
+                {/*<Head/>*/}
                 <HomeCarousel {...carouselProps}/>
                 <div>lol</div>
                 <TextCarousel/>

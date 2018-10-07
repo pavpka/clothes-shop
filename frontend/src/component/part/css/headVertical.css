@@ -1,7 +1,5 @@
 .head-vertical-component {
-    display: flex;
-    height: 100%;
-    width: 40%;
+    flex-grow: 1;
 }
 
 .head-vertical-categories {
@@ -11,7 +9,6 @@
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    flex: 0 0 auto;
 }
 
 .head-vertical-categories li {

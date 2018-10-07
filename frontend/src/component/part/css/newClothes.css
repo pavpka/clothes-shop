@@ -1,8 +1,23 @@
-.new-clothes-component{
-    width: 60%;
+.new-clothes-component {
+    height: 100%;
+    flex-grow: 3;
 }
 
-.new-clothes-component img{
-    height: 600px;
-    width: 800px;
+.new-clothes-content {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.new-clothes-img{
+    background: url("https://staticpages.mngbcn.com/homes/images/fw18/he/septiembre/newnow_he_septiembre_2_3_large.jpg?imwidth=1366&imdensity=1") no-repeat;
+    background-size: contain;
+    min-height: 600px;
+}
+
+.new-clothes-info {
+    z-index: 1;
+    color: white;
 }

@@ -1,17 +1,15 @@
 .head-component {
-    display: flex;
-    justify-content: center;
     background-color: #3d4043;
-    flex: 0 0 auto;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1;
 }
 
 .categories {
+    width: 100%;
     display: flex;
     list-style: none;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
@@ -27,11 +25,15 @@
 .categories a:hover {
     color: #ffffff;
     text-decoration: unset;
+    overflow: hidden;
 }
 
 .categories img {
     width: 100px;
-    display: flex;
+}
+
+.mobile-categories img {
+    width: 100px;
 }
 
 .sign a {
@@ -43,41 +45,99 @@
     text-decoration: underline;
 }
 
-ul.categories>li {
+ul.categories > li {
     align-items: center;
     list-style: none;
     display: flex;
     z-index: 1;
-    position: relative;
+    justify-content: center;
 }
 
-.submenu {
-    z-index: -1;
-    padding: 5px 10px;
-    overflow: hidden;
+.first-child {
+    height: 100%;
+}
+
+.head-component-li {
+    flex-grow: 1;
+}
+
+.mobile-categories {
     display: none;
-    width: 200px;
-    position: absolute;
-    top: 71px;
-    background-color: white;
-    list-style: none;
 }
 
-.submenu li:hover {
-    display: block;
-    padding-left: 3px;
-    background-color: transparent;
+@media (min-width: 1217px) {
+    .submenu {
+        z-index: -1;
+        padding: 5px 10px;
+        overflow: hidden;
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 71px;
+        background-color: white;
+        list-style: none;
+    }
 
+    .submenu li:hover {
+        display: block;
+        padding-left: 3px;
+        background-color: transparent;
+
+    }
+
+    .categories li:hover .submenu {
+        display: block;
+    }
+
+    .submenu a {
+        color: #60666c;
+    }
+
+    .submenu a:hover {
+        color: black;
+    }
 }
 
-.categories li:hover .submenu{
-    display: block;
+@media (max-width: 1217px) {
+    .submenu {
+        display: none;
+    }
+
+    .head-component-li {
+        width: 30px;
+    }
+
+    .head-component-li a {
+        overflow: hidden;
+    }
+
+    .signin {
+        padding-left: 25px;
+    }
 }
 
-.submenu a{
-    color: #60666c;
+@media (max-width: 750px) {
+    .categories a {
+        font-size: 14px;
+    }
+
+    .categories img {
+        width: 93px;
+    }
 }
 
-.submenu a:hover{
-    color: black;
+@media (max-width: 665px) {
+    .categories {
+        display: none;
+    }
+
+    .mobile-categories {
+        display: block;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .mobile-categories li{
+        flex-grow: 1;
+    }
 }
