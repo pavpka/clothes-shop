@@ -40,9 +40,6 @@ class Head extends Component {
                     <li className="sign head-component-li signin"><Link to="/signin">Вход</Link></li>
                     <li className="sign head-component-li"><Link to="/signup">Регистрация</Link></li>
                 </ul>
-                <div id="App">
-                    <MobileMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
-                </div>
             </div>
         )
     }
