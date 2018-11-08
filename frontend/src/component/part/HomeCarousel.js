@@ -8,7 +8,6 @@ class HomeCarousel extends Component {
     constructor(props) {
         super(props);
     }
-
     render() {
         return (
             <div className="home-carousel-component">
