@@ -6,103 +6,126 @@ class Head extends Component {
     render() {
         return (
             <div className="container">
-                <ul className="top-menu">
-                    <li><a href="" className="dropdown">Женское</a>
-                        <ul className="submenu">
-                            <li><h3>Колонка 1</h3>
+                <ul className="main-menu">
+                    <li><Link to="/">Женское</Link>
+                    <ul className="sub-menu">
+                        <li><h1>Заголовок 1</h1>
+                        <ul>
+                            <li><Link to="/">lol</Link></li>
+                            <li><Link to="/">lol</Link></li>
+                        </ul>
+                        </li>
+                        <li><h1>Заголовок 2</h1>
+                            <ul>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">kek</Link></li>
+                            </ul>
+                        </li>
+                        <li><h1>Заголовок 3</h1>
+                            <ul>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">kek</Link></li>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">kek</Link></li>
+                                <li><Link to="/">lol</Link></li>
+                                <li><Link to="/">lol</Link></li>
+                            </ul>
+                        </li>
+
+                                <li className="link-image">
+                                    <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
+                                </li>
+                            </ul>
+                    </li>
+                    <li><Link to="/">Мужское</Link>
+                        <ul className="sub-menu">
+                            <li><h1>Заголовок 1</h1>
                                 <ul>
-                                    <li><Link to="/">LOL</Link></li>
-                                    <li><Link to="/">KEK</Link></li>
-                                </ul>
-                            </li>
-                            <li><h3>Колонка 2</h3>
-                                <ul>
-                                    <li><Link to="/">kek</Link></li>
+                                    <li><Link to="/">lol</Link></li>
                                     <li><Link to="/">lol</Link></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li><h1>Заголовок 2</h1>
                                 <ul>
-                                    <li className="link-image">
-                                        <Link to="/"/>
-                                        <img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/>
-                                    </li>
-                                    <li><h3 className="image-header">это телка</h3></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">kek</Link></li>
+                                </ul>
+                            </li>
+                            <li><h1>Заголовок 3</h1>
+                                <ul>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">kek</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">kek</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                </ul>
+                            </li>
+
+                            <li className="link-image">
+                                <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><Link to="/">Детское</Link>
+                        <ul className="sub-menu">
+                            <li><h1>Заголовок 1</h1>
+                                <ul>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                </ul>
+                            </li>
+                            <li className="link-image">
+                                <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
+                            </li>
+                            <li><h1>Заголовок 2</h1>
+                                <ul>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">kek</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">kek</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="" className="dropdown">Мужское</a>
-                        <ul className="submenu">
-                            <li><h3>Колонка 1</h3>
-                                <ul>
-                                    <li><Link to="/">LOL</Link></li>
-                                    <li><Link to="/">KEK</Link></li>
-                                </ul>
+                    <li><Link to="/">Аксессуары</Link>
+                        <ul className="sub-menu">
+                            <li className="link-image">
+                                <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
                             </li>
-                            <li><h3>Колонка 2</h3>
+                            <li><h1>Заголовок 2</h1>
                                 <ul>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">kek</Link></li>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
                                     <li><Link to="/">kek</Link></li>
                                     <li><Link to="/">lol</Link></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li><h1>Заголовок 3</h1>
                                 <ul>
-                                    <li className="link-image">
-                                        <Link to="/"/>
-                                        <img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/>
-                                    </li>
-                                    <li><h3 className="image-header">это все та же телка</h3></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="" className="dropdown">Детское</a>
-                        <ul className="submenu">
-                            <li><h3>Колонка 1</h3>
-                                <ul>
-                                    <li><Link to="/">LOL</Link></li>
-                                    <li><Link to="/">KEK</Link></li>
-                                </ul>
-                            </li>
-                            <li><h3>Колонка 2</h3>
-                                <ul>
+                                    <li><Link to="/">lol</Link></li>
+                                    <li><Link to="/">lol</Link></li>
                                     <li><Link to="/">kek</Link></li>
                                     <li><Link to="/">lol</Link></li>
+
                                 </ul>
                             </li>
-                            <li>
+                            <li><h1>Заголовок 4</h1>
                                 <ul>
-                                    <li className="link-image">
-                                        <Link to="/"/>
-                                        <img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/>
-                                    </li>
-                                    <li><h3 className="image-header">это все та же телка</h3></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="" className="dropdown">Аксессуары</a>
-                        <ul className="submenu">
-                            <li><h3>Колонка 1</h3>
-                                <ul>
-                                    <li><Link to="/">LOL</Link></li>
-                                    <li><Link to="/">KEK</Link></li>
-                                </ul>
-                            </li>
-                            <li><h3>Колонка 2</h3>
-                                <ul>
-                                    <li><Link to="/">kek</Link></li>
                                     <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li className="link-image">
-                                        <Link to="/"/>
-                                        <img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/>
-                                    </li>
-                                    <li><h3 className="image-header">это все та же телка</h3></li>
                                 </ul>
                             </li>
                         </ul>
