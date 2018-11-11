@@ -1,83 +1,96 @@
-.head-component {
-    display: flex;
-    justify-content: center;
-    background-color: #3d4043;
-    flex: 0 0 auto;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
 
-.categories {
-    display: flex;
-    list-style: none;
+.main-menu {
     margin: 0;
     padding: 0;
-}
-
-.categories a {
-    color: #98978B;
-    font-size: 16px;
-    line-height: 70px;
-    padding-right: 100px;
-    text-decoration: unset;
-}
-
-.categories a:hover {
-    color: #ffffff;
-    text-decoration: unset;
-}
-
-.categories img {
-    width: 100px;
-    display: flex;
-}
-
-.sign a {
-    color: #ffffff;
-    text-decoration: unset;
-}
-
-.sign a:hover {
-    text-decoration: underline;
-}
-
-ul.categories>li {
-    align-items: center;
     list-style: none;
-    display: flex;
-    z-index: 1;
+
+}
+.main-menu > li {
     position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    z-index: 1;
+    left: 32%;
+
 }
 
-.submenu {
-    z-index: -1;
-    padding: 5px 10px;
-    overflow: hidden;
+.main-menu a {
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+}
+.main-menu .sign-head-component-li-signin a {
+    position: relative;
+    left: 430%;
+    font-weight: 300;
+
+}
+.main-menu .sign-head-component-li a {
+    position: relative;
+    left: 210%;
+    font-weight: 300;
+}
+
+.sub-menu a{
+    font-weight: 300;
+    color: #383b3f;
+}
+
+
+.main-menu .sub-menu {
+    position: fixed;
+    left: 1px;
     display: none;
-    width: 200px;
-    position: absolute;
-    top: 71px;
-    background-color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
+    background-color: white;
 }
 
-.submenu li:hover {
+.main-menu .sub-menu a {
+    margin-bottom: -1px;
+
+}
+
+.main-menu > li:hover .sub-menu {
     display: block;
-    padding-left: 3px;
-    background-color: transparent;
 
 }
-
-.categories li:hover .submenu{
-    display: block;
+.container{
+    min-width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.4;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    font-family: "Arial", sans-serif;
 }
-
-.submenu a{
-    color: #60666c;
+.sign-head-component-li-signin{
+    position: relative;
+    right: -500px;
 }
+.sub-menu{
+    column-count: 3;
+    height: 400px;
+}
+h1{
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.link-image{
+    padding-top: 30px;
+    padding-left: 20px;
 
-.submenu a:hover{
-    color: black;
+}
+.sub-menu>li>ul>li, .sub-menu>li{
+    list-style: none;
 }
