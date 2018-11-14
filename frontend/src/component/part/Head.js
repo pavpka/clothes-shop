@@ -4,139 +4,128 @@ import './css/head.css';
 
 class Head extends Component {
     render() {
-        return (
-            <div className="container">
-                <ul className="main-menu">
-                    <li><Link to="/">Женское</Link>
-                    <ul className="sub-menu">
-                        <li><h1>Заголовок 1</h1>
-                        <ul>
-                            <li><Link to="/">lol</Link></li>
-                            <li><Link to="/">lol</Link></li>
-                        </ul>
-                        </li>
-                        <li><h1>Заголовок 2</h1>
-                            <ul>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">kek</Link></li>
-                            </ul>
-                        </li>
-                        <li><h1>Заголовок 3</h1>
-                            <ul>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">kek</Link></li>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">kek</Link></li>
-                                <li><Link to="/">lol</Link></li>
-                                <li><Link to="/">lol</Link></li>
-                            </ul>
-                        </li>
+        window.onscroll =
+        function ScrollPage() {
+            const docscroll = window.pageYOffset;
+            if (docscroll > 40) {
+                document.getElementsByClassName("elements-of-menu")[0].style.position = "fixed";
+                document.getElementsByClassName("elements-of-menu")[0].style.top = "0px";
+         }
+         else document.getElementsByClassName("elements-of-menu")[0].style.position = "relative";
+     }
 
-                                <li className="link-image">
-                                    <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
+        return (
+            <div className="header">
+                <div className="top-line">
+                    <h4>Online shop</h4>
+                </div>
+                <div className="main-menu">
+                <div className="elements-of-menu">
+                    <ul className="link-menu">
+                    <li>
+                        <Link to="/women">Женское</Link>
+                        <ul className="drop-down">
+                            <li>
+                                <h1>Одежда</h1>
+                                <ul>
+                                    <li><Link to="/">Платья</Link></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h1>Обувь</h1>
+                                <ul>
+                                    <li><Link to="/">Туфли</Link></li>
+                                    <li><Link to="/">Специальные предложения</Link></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h1>lskd</h1>
+                                <ul>
+                                    <li><Link to="/">Туфли</Link></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                        <li>
+                            <Link to="/men">Мужское</Link>
+                            <ul className="drop-down">
+                                <li>
+                                    <h1>Одежда</h1>
+                                    <ul>
+                                        <li><Link to="/">Платья</Link></li>
+                                        <li><Link to="/">Юбки</Link></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h1>Обувь</h1>
+                                    <ul>
+                                        <li><Link to="/">Туфли</Link></li>
+                                        <li><Link to="/">Кроссовки</Link></li>
+                                    </ul>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                            <Link to="/kids">Детское</Link>
+                            <ul className="drop-down">
+                                <li>
+                                    <h1>Одежда</h1>
+                                    <ul>
+                                        <li><Link to="/">Платья</Link></li>
+                                        <li><Link to="/">Юбки</Link></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h1>Обувь</h1>
+                                    <ul>
+                                        <li><Link to="/">Туфли</Link></li>
+                                        <li><Link to="/">Кроссовки</Link></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <Link to="/accessories">Аксессуары</Link>
+                            <ul className="drop-down">
+                                <li>
+                                    <h1>Одежда</h1>
+                                    <ul>
+                                        <li><Link to="/">Платья</Link></li>
+                                        <li><Link to="/">Юбки</Link></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h1>Обувь</h1>
+                                    <ul>
+                                        <li><Link to="/">Туфли</Link></li>
+                                        <li><Link to="/">Кроссовки</Link></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    <li>
+                        <Link to="/lookbook">Lookbook</Link>
                     </li>
-                    <li><Link to="/">Мужское</Link>
-                        <ul className="sub-menu">
-                            <li><h1>Заголовок 1</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
-                            <li><h1>Заголовок 2</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                </ul>
-                            </li>
-                            <li><h1>Заголовок 3</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
+                    </ul>
 
-                            <li className="link-image">
-                                <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><Link to="/">Детское</Link>
-                        <ul className="sub-menu">
-                            <li><h1>Заголовок 1</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
-                            <li className="link-image">
-                                <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
-                            </li>
-                            <li><h1>Заголовок 2</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><Link to="/">Аксессуары</Link>
-                        <ul className="sub-menu">
-                            <li className="link-image">
-                                <Link to="/"><img src="https://html5book.ru/wp-content/uploads/2017/01/white-lady.jpg"/></Link>
-                            </li>
-                            <li><h1>Заголовок 2</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
-                            <li><h1>Заголовок 3</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">lol</Link></li>
-                                    <li><Link to="/">kek</Link></li>
-                                    <li><Link to="/">lol</Link></li>
 
-                                </ul>
-                            </li>
-                            <li><h1>Заголовок 4</h1>
-                                <ul>
-                                    <li><Link to="/">lol</Link></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="" className="lookbook">Lookbook</a></li>
-                    <li className="sign-head-component-li-signin"><Link to="/signin">Вход</Link></li>
-                    <li className="sign-head-component-li"><Link to="/signup">Регистрация</Link></li>
-                </ul>
+                            <ul className="right-menu">
+                                <li>
+                            <Link className="glyphicon glyphicon-user" aria-hidden="true" to="/"/>
+                                </li>
+                                <li>
+                            <Link className="glyphicon glyphicon-shopping-cart" aria-hidden="true" to="/"/>
+                                </li>
+                            </ul>
+
+
+                </div>
+            </div>
             </div>
         )
     }
 }
+
+
 
 export default Head;
