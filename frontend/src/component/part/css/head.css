@@ -1,14 +1,21 @@
+a, a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+@media (min-width: 1000px) {
+
 .header {
     background-color: white;
     position: relative;
     display: inline-block;
     width: 100%;
-
 }
 .top-line{
     text-align: center;
     position: relative;
 
+}
+.burger{
+    display: none;
 }
 .main-menu{
     display: block;
@@ -21,12 +28,7 @@
     display: flex;
 
 }
-.link-menu{
-    width: 100%;
-    list-style: none;
-    text-align: center;
-    padding-left: 18%;
-}
+
 .link-menu>li{
     display: inline-block;
     margin-right: inherit;
@@ -96,7 +98,40 @@
     list-style: none;
     text-align: left;
 }
+.link-menu {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    padding-left: 210px;
+}
 h1{
     font-weight: 600;
     font-size: 25px;
+}
+}
+@media (max-width: 999px) {
+    .elements-of-menu{
+        display: none;
+    }
+    .top-line{
+        padding-left: 30px;
+        font-size: 20px;
+        text-align: left;
+        position: relative;
+        display: flex;
+    }
+    .burger{
+        display: inline-block;
+        position: absolute;
+        padding: 1% 5% 4% 70%;
+    }
+    .burger a{
+        color: black;
+
+    }
+    .burger>span:hover a .elements-of-menu {
+        display: inline-block;
+
+    }
+
 }

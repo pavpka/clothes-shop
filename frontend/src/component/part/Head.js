@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './css/head.css';
@@ -13,12 +14,14 @@ class Head extends Component {
          }
          else document.getElementsByClassName("elements-of-menu")[0].style.position = "relative";
      }
-
         return (
             <div className="header">
                 <div className="top-line">
                     <h4>Online shop</h4>
-                </div>
+                    <div className="burger">
+                        <span><Link to="/" className="glyphicon glyphicon-menu-hamburger" aria-hidden="true"/>
+                    </span>
+                    </div>
                 <div className="main-menu">
                 <div className="elements-of-menu">
                     <ul className="link-menu">
@@ -120,6 +123,7 @@ class Head extends Component {
 
 
                 </div>
+            </div>
             </div>
             </div>
         )
