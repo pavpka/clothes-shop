@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Head from './part/Head'
 import HomeCarousel from './part/HomeCarousel';
 import './css/main.css';
-import TextCarousel from './part/TextCarousel';
 
 class Main extends Component {
     render() {
@@ -26,10 +25,33 @@ class Main extends Component {
         return (
             <div className="main-component">
                 <Head/>
-                <HomeCarousel {...carouselProps}/>
-                <div>lol</div>
-                <TextCarousel/>
-                <div>lol</div>
+                <HomeCarousel  {...carouselProps}/>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+                <div>где-то здесь подвал</div>
+
+
             </div>
         )
     }
