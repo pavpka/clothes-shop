@@ -8,6 +8,7 @@ import store from './store';
 import Main from './component/Main';
 import './css/index.css';
 import Men from './component/Men';
+import Lookbook from './component/Lookbook'
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -19,6 +20,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={Main}/>
                 <Route path="/men" component={Men}/>
+                <Route path="/lookbook" component={Lookbook}/>
             </Switch>
         </Router>
     </Provider>,

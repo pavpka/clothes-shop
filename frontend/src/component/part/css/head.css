@@ -1,7 +1,10 @@
 a, a:hover, a:active, a:focus {
     text-decoration: none;
 }
-@media (min-width: 1000px) {
+.top-line a{
+    color: black;
+}
+@media (min-width: 999px) {
 
 .header {
     background-color: white;
@@ -60,8 +63,8 @@ a, a:hover, a:active, a:focus {
 .elements-of-menu .drop-down{
     position: fixed;
     width: 100%;
-    margin-top: 24px;
-    left: -1px;
+    margin-top: 25px;
+    left: -0.1px;
     list-style: none;
     background-color: #b2b2b2;
     display: none;
@@ -108,7 +111,7 @@ h1{
     font-size: 25px;
 }
 }
-@media (max-width: 999px) {
+@media (max-width: 1000px) {
     .elements-of-menu{
         display: none;
         width: 100%;
@@ -143,7 +146,7 @@ h1{
         display: inline-block;
         position: absolute;
         right: 7%;
-        top: 1%
+        top: 15%
     }
     .burger a{
         color: black;
