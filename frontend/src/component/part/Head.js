@@ -2,26 +2,49 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './css/head.css';
-
+let count=0;
 class Head extends Component {
     render() {
+
+        window.onresize =
+            function reSize(){
+            if (document.body.clientWidth>999)
+                document.getElementsByClassName("elements-of-menu")[0].style.display = "flex";
+            else document.getElementsByClassName("elements-of-menu")[0].style.display = "none";
+            };
+
         window.onscroll =
         function ScrollPage() {
-            const docscroll = window.pageYOffset;
-            if (docscroll > 40) {
-                document.getElementsByClassName("elements-of-menu")[0].style.position = "fixed";
-                document.getElementsByClassName("elements-of-menu")[0].style.top = "0px";
+            const docScroll = window.pageYOffset;
+            if (document.body.clientWidth>999) {
+                if (docScroll > 40) {
+                    document.getElementsByClassName("elements-of-menu")[0].style.position = "fixed";
+                    document.getElementsByClassName("elements-of-menu")[0].style.top = "0px";
+                }
+                else document.getElementsByClassName("elements-of-menu")[0].style.position = "relative";
+            }
+     };
+
+     function adaptMenu() {
+         count++;
+         if (document.body.clientWidth < 999) {
+             document.getElementsByClassName("elements-of-menu")[0].style.display = "none";
+
+             if (count % 2 === 1) {
+                 document.getElementsByClassName("elements-of-menu")[0].style.display = "inline";
+             }
+             else document.getElementsByClassName("elements-of-menu")[0].style.display = "none"
          }
-         else document.getElementsByClassName("elements-of-menu")[0].style.position = "relative";
      }
         return (
             <div className="header">
                 <div className="top-line">
                     <h4>Online shop</h4>
-                    <div className="burger">
-                        <span><Link to="/" className="glyphicon glyphicon-menu-hamburger" aria-hidden="true"/>
+                    <div  className="burger">
+                        <span><Link onClick={adaptMenu} to="/"  className="glyphicon glyphicon-menu-hamburger" aria-hidden="true"/>
                     </span>
                     </div>
+                </div>
                 <div className="main-menu">
                 <div className="elements-of-menu">
                     <ul className="link-menu">
@@ -121,10 +144,9 @@ class Head extends Component {
                                 </li>
                             </ul>
 
-
                 </div>
             </div>
-            </div>
+
             </div>
         )
     }
