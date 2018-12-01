@@ -2,23 +2,43 @@ import React, {Component} from 'react';
 import Head from './part/Head'
 import HomeCarousel from './part/HomeCarousel';
 import './css/main.css';
+import Footer from "./part/Footer";
+import MainCards from "./part/MainCards";
 
 class Main extends Component {
     render() {
         const carouselProps = {
-            width: 1920,
-            height: 1080,
-            isCaptionExist: true,
             pictures: [
                 {
-                    src: "https://staticpages.mngbcn.com/homes/images/fw18/he/septiembre/newnow_he_septiembre_2_3_large.jpg?imwidth=1366&imdensity=1",
-                    title: "lol",
-                    price: "kek",
+                    src: "https://mediacdn.befree.ru/media/gene-cms/6/_/6_80.jpg",
+                    title: "Посмотреть коллекцию",
+                    url: "/newyear",
+                    label: "Новогодняя коллекция 2019",
                 },
                 {
-                    src: "https://wallbox.ru/resize/1920x1080/wallpapers/main/201424/93f059e7674a152.jpg",
-                    title: "lol",
-                    price: "kek",
+                    src: "https://images.pexels.com/photos/1452783/pexels-photo-1452783.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
+                    title: "Купить уютный свитер",
+                    url: "/woman/sweaters",
+                    label: "Пора утепляться!",
+                }
+            ],
+        };
+        const cardsProps = {
+            pictures: [
+                {
+                    src: "https://www.super-offerte.com/wp-content/uploads/inverno-scelta-cappotto.jpg",
+                    title: "Теплая и уютная зимняя одежда",
+                    width: "750",
+                    height: "500",
+                    url: "",
+                    style: "15vw"
+                },
+                {
+                    src: "https://miestilo.ru/upload/iblock/575/5755b150dc9d83e8e80ee6e4ce5589e3.jpg",
+                    width: "600",
+                    height: "450",
+                    url: "",
+                    style: "75vw"
                 }
             ],
         };
@@ -26,32 +46,8 @@ class Main extends Component {
             <div className="main-component">
                 <Head/>
                 <HomeCarousel  {...carouselProps}/>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-                <div>где-то здесь подвал</div>
-
-
+                <MainCards {...cardsProps}/>
+                <Footer/>
             </div>
         )
     }

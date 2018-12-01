@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
 import './css/LookbookCard.css'
-import {Link} from 'react-router';
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-
+import ResponsiveEmbed from "react-bootstrap/es/ResponsiveEmbed";
 
 
 class LookbookCard extends Component {
 
-    render() {
 
+    render() {
         return (
             <div>
+                lkdtjgdrh
             </div>
-
         )
     }
 }
+
 export default LookbookCard;

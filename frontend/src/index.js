@@ -11,6 +11,7 @@ import Men from './component/Men';
 import Lookbook from './component/Lookbook'
 
 import registerServiceWorker from './registerServiceWorker';
+import Woman from "./component/Woman";
 
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -21,6 +22,7 @@ ReactDOM.render(
                 <Route exact path="/" component={Main}/>
                 <Route path="/men" component={Men}/>
                 <Route path="/lookbook" component={Lookbook}/>
+                <Route path="/woman" component={Woman}/>
             </Switch>
         </Router>
     </Provider>,
