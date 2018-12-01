@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Head from './part/Head';
 import "./css/men.css";
 import {Link} from 'react-router';
+import ListOfClothes from './part/ListOfClothes';
 
 class Woman extends Component{
     render(){
@@ -9,7 +10,10 @@ class Woman extends Component{
 
         };
         return(
-            <div></div>
+            <div>
+                <Head/>
+                <ListOfClothes/>
+            </div>
         )
     }
 }
