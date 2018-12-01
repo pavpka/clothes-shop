@@ -14,11 +14,11 @@ class HomeCarousel extends Component {
                 <Carousel>
                     {this.props.pictures.map((picture) =>
                         <Carousel.Item>
-                            <Link to="/"><img src={picture.src}/></Link>
+                            <Link to={picture.url}><img id="image-carousel" src={picture.src}/></Link>
                             <Carousel.Caption>
-                                <div hidden={!this.props.isCaptionExist}>
-                                    <h3>{picture.title}</h3>
-                                    <p>{picture.price}</p>
+                                <div >
+                                    <h2><Link to={picture.url}>{picture.title}</Link></h2>
+                                    <h4>{picture.label}</h4>
                                 </div>
                             </Carousel.Caption>
                         </Carousel.Item>

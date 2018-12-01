@@ -1,7 +1,16 @@
+
 .home-carousel-component {
     flex: auto;
 }
-
-.carousel.carousel-caption {
+#image-carousel{
+    width: 100%;
 }
-
+a, a:visited{
+    color: white;
+}
+h2:hover a{
+    text-shadow: black 0 0 10px;
+}
+h2{
+    font-size: 8vw;
+}
