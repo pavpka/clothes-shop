@@ -22,3 +22,7 @@ frontend/package-lock.json
 load/node_modules
 
 load/package-lock.json
+
+node_modules
+
+package-lock.json
