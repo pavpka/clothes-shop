@@ -25,7 +25,7 @@ a, a:hover, a:active, a:focus {
     display: block;
 }
 .elements-of-menu{
-    background-color: #b2b2b2;
+    background-color: #ffe8ba;
     z-index: 1;
     width: 100%;
     position: absolute;
@@ -65,7 +65,7 @@ a, a:hover, a:active, a:focus {
     margin-top: 25px;
     left: -0.1px;
     list-style: none;
-    background-color: #b2b2b2;
+    background-color: #ffe8ba;
     display: none;
 }
 .elements-of-menu>.link-menu>li:hover .drop-down{
@@ -165,7 +165,7 @@ h1{
 
     }
     .link-menu>li:hover a{
-        color: darkgrey;
+        color: #ffe8ba;
         text-decoration: none;
     }
 }
