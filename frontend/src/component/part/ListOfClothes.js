@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
-import {connect} from 'react-redux'
+import "./css/listOfClothes.css";
+import {connect} from 'react-redux';
 import axios from 'axios';
 
 class ListOfClothes extends Component {
@@ -8,7 +9,6 @@ class ListOfClothes extends Component {
         super(props);
         this.dataLoad = this.dataLoad.bind(this);
     }
-
     componentDidMount(){
         this.dataLoad();
     }
@@ -20,17 +20,28 @@ class ListOfClothes extends Component {
                 console.log(res.data);
             })
     }
+    
 
     render() {
+        function inBasket() {
+            
+        }
         return (
             <div className="list-of-clothes-component">
                 <ul>
                     {this.props.clothes.map((data) =>
-                        <li key={data.id}>
-                            <h1>{data.name}</h1>
-                            <img src={data.refImg} height="50px"/>
-                            <h1>{data.price}</h1>
-                        </li>
+                        <div className="product-wrap" key={data.id}>
+                            <div className="product-item">
+                                <div className="img-of-product">
+                                <img src={data.refImg}/>
+                                </div>
+                                <div className="product-button"> <a className="button">В корзину</a></div>
+                            </div>
+                            <div className="product-title">
+                                <Link onClick={inBasket}><h1>{data.name}</h1></Link>
+                                <h3>{data.price}</h3>
+                            </div>
+                        </div>
                     )}
                 </ul>
             </div>
