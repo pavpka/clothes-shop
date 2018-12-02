@@ -16,13 +16,14 @@ import Woman from "./component/Woman";
 const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
-    <Provider>
+    <Provider store={store}>
         <Router history={history}>
             <Switch>
                 <Route exact path="/" component={Main}/>
                 <Route path="/men" component={Men}/>
                 <Route path="/lookbook" component={Lookbook}/>
                 <Route path="/woman" component={Woman}/>
+                <Route path="/woman/blouses" component={Woman}/>
             </Switch>
         </Router>
     </Provider>,

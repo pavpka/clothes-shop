@@ -13,8 +13,12 @@ buildNumber.properties
 
 .idea
 
-frontend/node_modules
-
 clothes-shop.iml
 
+frontend/node_modules
+
 frontend/package-lock.json
+
+load/node_modules
+
+load/package-lock.json

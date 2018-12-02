@@ -1,21 +1,17 @@
-
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './css/head.css';
 let count=0;
+
 class Head extends Component {
     render() {
-
         window.onresize =
             function reSize(){
             if (document.body.clientWidth>=1000) {
                 document.getElementsByClassName("elements-of-menu")[0].style.display = "flex";
-
             }
             else {
                 if (count % 2 === 1) document.getElementsByClassName("elements-of-menu")[0].style.display = "inline";
-
-
                 else document.getElementsByClassName("elements-of-menu")[0].style.display = "none";
             }
 
